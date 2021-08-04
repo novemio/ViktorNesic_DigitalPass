@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Digital Pass</string>
+    <string name="main_btn_txt">Create Account</string>
+    <string name="pass">Passes</string>
+    <string name="update">Update Credentials</string>
+    <string name="ready">Ready expiration time:</string>
+    <string name="user_expiration">User expiration time:</string>
+    <string name="time_credential">Get Time Credential</string>
+    <string name="pass_credential">Get Pass Credential</string>
+    <string name="toast_text">Credential is created</string>
+</resources>

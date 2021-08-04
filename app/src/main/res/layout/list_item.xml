@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/button_background">
+
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pass_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/image"/>
+
+
+            <TextView
+                android:id="@+id/pass_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/pass_image"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Pass name"/>
+
+
+        <TextView
+            android:id="@+id/pass_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass_name"
+            android:layout_toEndOf="@id/pass_image"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:text="Pass name"/>
+
+    </RelativeLayout>
+    </RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserDetailView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+     <ImageView
+         android:id="@+id/back"
+         android:layout_width="@dimen/_30sdp"
+         android:layout_height="@dimen/_20sdp"
+         android:src="@drawable/back_arrow"
+         android:layout_marginStart="@dimen/_15sdp"
+         android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/back"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_above="@+id/update_btn"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/user_back_outer">
+
+
+            <ImageView
+                android:id="@+id/pass_icon"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/image"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+            <TextView
+                android:id="@+id/pass_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/pass_icon"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pass_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/pass_icon"
+                android:layout_below="@+id/pass_name"
+                android:paddingStart="@dimen/_10sdp"
+                android:textSize="@dimen/_9sdp"
+                android:textColor="@color/white"/>
+
+
+
+
+            <View
+                android:id="@+id/top_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/line_color"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_80sdp"/>
+
+  <RelativeLayout
+            android:id="@+id/online_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_line"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_above="@+id/bottom_line"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:background="@drawable/offline_user">
+
+      <ImageView
+          android:id="@+id/online_status"
+          android:layout_width="@dimen/_30sdp"
+          android:layout_height="@dimen/_30sdp"
+          android:src="@drawable/warning"
+          android:layout_marginEnd="@dimen/_15sdp"
+          android:layout_marginTop="@dimen/_20sdp"
+          android:layout_alignParentEnd="true"/>
+
+
+      <ImageView
+          android:id="@+id/user_image"
+          android:layout_width="@dimen/_140sdp"
+          android:layout_height="@dimen/_140sdp"
+          android:src="@drawable/image"
+          android:layout_centerInParent="true"/>
+
+      <TextView
+          android:id="@+id/user_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="@dimen/_20sdp"
+          android:textAlignment="center"
+          android:textSize="@dimen/_15sdp"
+          android:textColor="@color/white"/>
+
+</RelativeLayout>
+            <View
+                android:id="@+id/bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/line_color"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_60sdp"/>
+
+            <TextView
+                android:id="@+id/user_expiration_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/ready_expiration_time"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/ready_expiration_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"/>
+
+
+
+
+</RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:background="@drawable/button_background"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textAllCaps="false"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
